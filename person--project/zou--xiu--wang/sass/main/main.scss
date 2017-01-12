@@ -1,0 +1,14 @@
+@charset "utf-8";
+$base-fontSize:16px;
+$base-color:#fff;
+$base-backgroundColor:#ccc;
+
+
+body{
+  font-size: $base-fontSize;
+  color:$base-color;
+  background-color: $base-backgroundColor;
+}
+div{
+  font-size: $base-fontSize;
+}

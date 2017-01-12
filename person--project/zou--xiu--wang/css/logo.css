@@ -1,0 +1,58 @@
+*{margin:0; padding:0}
+img{display: block;}
+ul{list-style: none;}
+a{text-decoration: none;}
+html,body{width: 100%; height: 100%}
+#container{width: 100%; height: 100%}
+h3{width: 100%; height: 30px;}
+h3>a>img{margin: 10px 0 10px 150px;}
+#bg{width: 100%; height: 530px; margin-top: 10px; border-top: 1px solid #c0c0c0;background: url("../images/regist-pic/bg.png")}
+#bg>img{width:456px; height:376px; margin: 100px 0 0 200px; float: left;}
+#logo{width: 316px; height: 420px;border: 1px solid #cccccc; float: right; margin: 80px 200px 0 0;position: relative; background-color: white;}
+#logo-header{width: 100%; height: 40px; background-color:whitesmoke;}
+#logo-header>p{width:158px;height: 40px; line-height: 40px; text-align: center;font-size: 14px; float: left;}
+#logo-header>p:hover{font-weight: 900;border-bottom: 1px solid black;}
+#signupForm>input{display:block;width: 230px; height: 26px; margin-left: 30px; }
+#signupForm>#yzm{width: 155px; height: 26px;margin-left: 30px; margin-top: 20px;}
+#tach{position:absolute; left:193px; top:91px;width: 75px; height: 28px; display: block;}
+#pw{width: 100%; height: 100px; font-size: 14px;}
+#pw1{width: 100%; height: 30px;}
+#pw1>input{width: 15px; height: 15px; margin-top: 40px; margin-left: 30px;}
+#pw1>p{width: 100px; height: auto; position: absolute; left: 52px;top:158px;font-size: 12px;}
+#pw1>a{position: absolute;left: 206px; top:158px; color: #0f0f0f;width: 60px; height: 30px;font-size: 12px;}
+#ts{width: 200px; height: auto;background-color: orange; color: orangered; margin-left: 20px; font-size: 10px; display: none;}
+
+
+
+#logoin{width: 200px;height: 30px; background-color: red; border-radius: 20px; margin-left: 60px; margin-top: 30px; color: whitesmoke;}
+#logo-header>#pw>p{margin-left: 50px; font-size: 14px; margin-top: 10px;}
+#pw>ul{width: 280px; height: 40px; margin-left: 40px; margin-top: 20px;}
+#pw>ul>li{width: 32px; height: 32px; float: left; margin-left: 15px;}
+
+
+#logo1{width: 316px; height: 420px;border: 1px solid #cccccc; float: right; margin: 80px 200px 0 0;position: relative; position: absolute; left: 746px; display: none;}
+#logo-header1{width: 100%; height: 40px; background-color:whitesmoke;}
+#logo-header1>p{width:158px;height: 40px; line-height: 40px; text-align: center;font-size: 14px; float: left;}
+#logo-header1>p:hover{font-weight: 900;border-bottom: 1px solid black;}
+#signupForm1>input{display:block;width: 230px; height: 26px; margin-left: 30px; }
+#signupForm1>#yzm1{width: 155px; height: 26px;margin-left: 30px; margin-top: 20px;}
+#tach1{position:absolute; left:193px; top:91px;width: 75px; height: 28px; display: block;}
+#pw0{width: 100%; height: 100px; font-size: 14px;}
+#pw11{width: 100%; height: 30px;}
+#pw11>input{width: 15px; height: 15px; margin-top: 40px; margin-left: 30px;}
+#pw11>p{width: 100px; height: auto; position: absolute; left: 52px;top:158px;font-size: 12px;}
+#pw11>a{position: absolute;left: 165px; top:158px; color: #0f0f0f;width: 60px; height: 30px;font-size: 12px;}
+#pw11>a:nth-of-type(2){position: absolute;left: 230px; top:158px; color: #0f0f0f;width: 60px; height: 30px;font-size: 12px;}
+#ts1{width: 200px; height: auto;background-color: orange; color: orangered; margin-left: 20px; font-size: 10px; display: none;}
+#logoin1{width: 200px;height: 30px; background-color: red; border-radius: 20px; margin-left: 60px; margin-top: 30px; color: whitesmoke;}
+#logo-header1>#pw0>p{margin-left: 50px; font-size: 14px; margin-top: 10px;}
+#pw0>ul{width: 280px; height: 40px; margin-left: 40px; margin-top: 20px;}
+#pw0>ul>li{width: 32px; height: 32px; float: left; margin-left: 15px;}
+
+#footer{width: 100%; height: 100px;}
+#footer>ul{width: 800px; height:40px; margin-left: 400px; margin-top: 50px;}
+#footer>ul>li{float: left;margin-left: 5px; border-right: 1px solid #cccccc;width: 70px;height: 20px; text-align: center;}
+#footer>ul>li:nth-of-type(8){border-right: none;}
+#footer>ul>li>a{font-size: 14px; color: #0f0f0f;width: 70px;height: 20px;}
+#footer>ul>li>a:hover{border-bottom: 1px solid black;}
+#footer>p{font-size: 12px;color: #cccccc; margin-left: 500px;}

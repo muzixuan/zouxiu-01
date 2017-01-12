@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/logo.css">
+    <style>
+        .error{display: block; color:red;font-size: 12px; margin-left: 30px;}
+    </style>
+</head>
+<body>
+<div id="container">
+    <h3><a href="index01.html"><img src="images/regist-pic/logo_mini.png" alt=""></a></h3>
+    <div id="bg">
+        <img src="images/regist-pic/1.png" alt="">
+        <div id="logo" class="logo">
+            <div id="logo-header" class="logo-header">
+                <p>短信登录</p>
+                <p>密码登录</p>
+                <form action="" id="signupForm" class="signupForm">
+                    <input id="phoneNumber" class="phoneNumber" name="username" type="text" placeholder="手机号码">
+                    <input id="yzm" name="yzm" type="text" placeholder="短信验证码">
+                    <button id="tach" class="tach">获取验证码</button>
+                </form>
+                <div id="pw" class="pw">
+                    <div id="pw1" class="pw">
+                        <input type="checkbox" value=""><p id="zd">两周内自动登录</p>
+                        <a href="">找回密码</a>
+                        <div id="ts" class="ts">为了账户安全，请勿在公共电脑上勾选此项</div>
+                    </div>
+
+                    <button id="logoin" class="logoin">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                    <p>-&#45;&#45;&#45;&#45;&#45;&#45;合作网站账户登录&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</p>
+                    <ul>
+                        <li><a href=""><img src="images/small&#45;&#45;pic/1.png" alt=""></a></li>
+                        <li><a href=""><img src="images/small&#45;&#45;pic/2.png" alt=""></a></li>
+                        <li><a href=""><img src="images/small&#45;&#45;pic/3.png" alt=""></a></li>
+                        <li><a href=""><img src="images/small&#45;&#45;pic/4.png" alt=""></a></li>
+                        <li><a href=""><img src="images/small&#45;&#45;pic/5.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="logo1" class="logo">
+            <div id="logo-header1" class="logo-header">
+                <p>短信登录</p>
+                <p>密码登录</p>
+                <form action="" id="signupForm1" class="signupForm">
+                    <input id="phoneNumber1" class="phoneNumber" name="username1" type="text" placeholder="手机号码">
+                    <input id="yzm1" name="yzm1" type="text" placeholder="短信验证码">
+                    <button id="tach1" class="tach">获取验证码</button>
+                </form>
+                <div id="pw0" class="pw">
+                    <div id="pw11" class="pw">
+                        <input type="checkbox" value=""><p id="zd1">两周内自动登录</p>
+                        <a href="">找回密码</a>
+                        <a href="">注册账号</a>
+                        <div id="ts1" class="ts">为了账户安全，请勿在公共电脑上勾选此项</div>
+                    </div>
+
+                    <button id="logoin1" class="logoin">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                    <p>-------合作网站账户登录--------</p>
+                    <ul>
+                        <li><a href=""><img src="images/small--pic/1.png" alt=""></a></li>
+                        <li><a href=""><img src="images/small--pic/2.png" alt=""></a></li>
+                        <li><a href=""><img src="images/small--pic/3.png" alt=""></a></li>
+                        <li><a href=""><img src="images/small--pic/4.png" alt=""></a></li>
+                        <li><a href=""><img src="images/small--pic/5.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <ul>
+            <li><a href="http://www.xiu.com/about/aboutus.shtml">关于走秀</a></li>
+            <li><a href="http://www.xiu.com/about/media.shtml">媒体报道</a></li>
+            <li><a href="http://www.xiu.com/about/cooperate.shtml">品牌招商</a></li>
+            <li><a href="http://www.xiu.com/about/job.shtml">加入走秀</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">帮助中心</a></li>
+            <li><a href="#">网站地图</a></li>
+        </ul>
+        <p>Copyright © 2008-2017 Xiu.com 版权所有 . 粤ICP备07502993号</p>
+    </div>
+</div>
+<script src="js/lib/jquary/jquery-1.12.4.min.js"></script>
+<script src="js/lib/jquary--validate/jquery.validate.js"></script>
+<script src="js/lib/jquery--qrcode/jquary--qrcode.js"></script>
+<script>
+    $(function(){
+        //验证账号和验证码
+        $("#signupForm").validate({
+            rules:{
+                username:"required",
+                yzm:"required"
+            },
+            messages:{
+                username:"账号不能为空",
+                yzm:"请输入验证码"
+            }
+        });
+
+        $("#signupForm1").validate({
+            rules:{
+                username1:"required",
+                yzm1:"required"
+            },
+            messages:{
+                username1:"账号不能为空",
+                yzm1:"请输入验证码"
+            }
+        });
+
+        //登录和注册的来回切换
+        $("#logo-header>p:last").mouseover(function(){
+            $("#logo1").css({display:"block"});
+            $("#logo").css({display:"none"});
+        });
+        $("#logo-header1>p:first").mouseover(function(){
+            $("#logo").css({display:"block"});
+            $("#logo1").css({display:"none"});
+        });
+
+        //样式修改
+        $("#tach").click(function(){
+           $("#logo").css("display","block");
+           $("#logo1").css("display","none");
+           $("#tach").css({
+               top:"106px",
+           });
+           $("#zd").css({
+               top:"188px"
+           });
+           $("#pw1>a").css({
+               top:"188px"
+           })
+        });
+
+        $("#tach1").click(function(){
+            $("#tach1").css({
+                top:"106px",
+            });
+            $("#zd1").css({
+                top:"188px"
+            });
+            $("#pw11>a").css({
+                top:"188px"
+            })
+        });
+        $("#tach-code").click(function(){
+            $("#tach").qrcode({
+             render:"table",
+             left:100,
+             top:100,
+             width:150,
+             height:150,
+             text:"http://www.xiu.com/"
+             });
+        })
+    });
+</script>
+</body>
+</html>
